@@ -16,7 +16,7 @@ app.config['JWT_SECRET_KEY'] = 'sua-chave-secreta-forte-aqui'
 
 db = SQLAlchemy(app)
 jwt = JWTManager(app)
-CORS(app)  # necessário para requisições de API
+CORS(app)  # requisições de API
 
 # modelos de user ou ong
 class User(db.Model):
@@ -88,7 +88,7 @@ def login():
     if not user or not user.check_password(password):
         return jsonify({"error": "E-mail ou senha incorretos."}), 401
 
-    # adiciona o papel e o id nos dados de identidade do JWT
+    # dados de identidade do JWT
     identity_data = {
         "id": user.id,
         "role": user.role,

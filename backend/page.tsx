@@ -176,7 +176,7 @@ export default function SethoPlatform() {
         {activeTab === 'vagas' && (
           <div className="space-y-6">
             {/* HERO & BUSCA */}
-            <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-3xl p-6 sm:p-10 text-white shadow-lg shadow-emerald-100">
+            <div className="bg-linear-to-br from-emerald-600 to-teal-700 rounded-3xl p-6 sm:p-10 text-white shadow-lg shadow-emerald-100">
               <h1 className="text-2xl sm:text-4xl font-bold tracking-tight mb-2">Conectando quem quer ajudar a quem precisa.</h1>
               <p className="text-emerald-100 max-w-2xl text-sm sm:text-base mb-6">
                 Descubra projetos sociais, ofereça seu talento e transforme realidades comunitárias.
@@ -388,7 +388,7 @@ export default function SethoPlatform() {
                       <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Chave Pix</span>
                       <span className="text-xs font-mono text-slate-700 select-all">{op.ong.pix_key}</span>
                     </div>
-                    <QrCode className="w-6 h-6 text-slate-600 flex-shrink-0" />
+                    <QrCode className="w-6 h-6 text-slate-600 shrink-0" />
                   </div>
 
                   <button 
